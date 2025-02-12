@@ -25,5 +25,6 @@ class FareRequest(BaseModel):
     surge_multiplier: float
 
 class FareResponse(BaseModel):
+    ride_id: int
     total_fare: float
     fare_breakdown: FareBreakdown
